@@ -80,6 +80,13 @@ public:
 	UFUNCTION( BlueprintCallable, Category="EASE" )
 	static void EASE_PostData();
 
+	static void MarkerEnterExit(
+		const FString& markerName,
+		const FString& markerData,
+		FVector location,
+		bool enter
+	);
+
 private:
 
 	static void MarkerAddRemove(
@@ -87,13 +94,6 @@ private:
 		const FString& markerData,
 		FVector location,
 		bool add
-	);
-
-	static void MarkerEnterExit(
-		const FString& markerName,
-		const FString& markerData,
-		FVector location,
-		bool enter
 	);
 
 	static void MarkerHitEnterExit(

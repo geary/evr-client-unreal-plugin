@@ -148,14 +148,14 @@ void UEaseLibrary::EASE_MarkerRemove(
 }
 
 void UEaseLibrary::EASE_PostData() {
+	if( _Events.Len() == 0 ) return;
+
 	if( _LogApiCalls ) {
 		UE_LOG(
 			LogEASE, Log,
 			TEXT("EasePostData")
 		);
 	}
-
-	if( _Events.Len() == 0 ) return;
 
 	FString url =
 		_ApiUrl + FString(TEXT("/capture/")) +

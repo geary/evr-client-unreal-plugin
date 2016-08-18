@@ -3,7 +3,7 @@
 
 #include "EasePluginPrivatePCH.h"
 
-UEASE_MarkerComponent::UEASE_MarkerComponent(
+UEaseMarkerComponent::UEaseMarkerComponent(
 	const FObjectInitializer& initializer
 ) : Super( initializer ) {
 }
