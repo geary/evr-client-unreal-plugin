@@ -341,9 +341,10 @@ void UEaseLibrary::MarkerEnterExit(
 	if( _LogApiCalls ) {
 		UE_LOG(
 			LogEASE, Log,
-			TEXT("EaseMarker%s: %s"),
+			TEXT("EaseMarker%s: %s %s"),
 			enter ? TEXT("Enter") : TEXT("Exit"),
-			*name
+			*name,
+			*data
 		);
 	}
 

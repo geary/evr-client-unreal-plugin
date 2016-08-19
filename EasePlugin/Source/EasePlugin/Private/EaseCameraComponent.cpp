@@ -96,7 +96,7 @@ void UEaseCameraComponent::MarkerHitEnterExit(
 	if( ! _HitMarker ) return;
 
 	auto name = _HitMarker->GetName();
-	auto data = TEXT("");
+	auto data = _HitMarker->Data;
 
 	UEaseLibrary::MarkerEnterExit(
 		name,

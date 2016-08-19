@@ -12,4 +12,8 @@
 UCLASS( MinimalAPI, meta = ( BlueprintSpawnableComponent ), ClassGroup = EASE )
 class UEaseMarkerComponent : public UActorComponent {
 	GENERATED_UCLASS_BODY()
+
+	// Marker data in any format
+	UPROPERTY( EditAnywhere, Category = "EASE" )
+	FString Data;
 };
